@@ -18,10 +18,5 @@ if $::osfamily =='windows' {
       require => Package['globalmapper-license-server-license-manager'],
       enable  => true,
     }
-    service {'FlexNet Licensing Service':
-      ensure  => 'running',
-      require => Package['globalmapper-license-server-license-manager'],
-      enable  => true,
-    }
   }
 }

@@ -1,0 +1,30 @@
+---
+stages:
+- build
+- test
+
+default:
+  before_script:
+    - pdk --version
+
+variables:
+    ErrorActionPreference: ignore
+
+validate:
+  image: puppet/puppet-dev-tools
+  stage: build
+  script:
+    - pdk validate --format=junit:report.xml --parallel
+  artifacts:
+    reports:
+      junit: report.xml
+  tags:
+    - ci
+
+test:
+  image: puppet/puppet-dev-tools
+  stage: test
+  script:
+    - pdk test unit
+  tags:
+    - ci

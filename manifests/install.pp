@@ -5,23 +5,16 @@ class globalmapper-license-server::install {
 
   if $::osfamily == 'windows' {
 
-    file {'C:\ProgramData\Intergraph\Licensing\ActivationIds.xml':
+    file {'C:\lmtools\license.lic':
       ensure  => 'present',
-      source  => 'puppet:///modules/globalmapper-license-server/ActivationIds.xml',
+      source  => 'puppet:///modules/globalmapper-license-server/license.lic',
       require => Package['globalmapper-license-server-license-manager']
-    }
-
-      # Install .net Full Profile needed Licensing16.6.13
-    package {'net-framework-full-profile':
-      ensure   => latest,
-      provider => chocolatey,
     }
 
     #install Licensing16.6.13
     package {'globalmapper-license-server-license-manager':
       ensure   => latest,
       provider => chocolatey,
-      require  => Package['net-framework-full-profile']
     }
   }
 }
