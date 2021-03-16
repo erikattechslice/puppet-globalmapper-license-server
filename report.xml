@@ -1,0 +1,73 @@
+<?xml version='1.0'?>
+<testsuites>
+  <testsuite name='task-name' tests='1' errors='0' failures='0' skipped='1' time='0' timestamp='2021-02-12T01:28:58' hostname='ip-10-113-130-81.evoforge.org' id='0' package='task-name'>
+    <properties/>
+    <testcase classname='task-name' name='./' time='0'>
+      <skipped/>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite name='task-metadata-lint' tests='1' errors='0' failures='0' skipped='1' time='0' timestamp='2021-02-12T01:28:58' hostname='ip-10-113-130-81.evoforge.org' id='1' package='task-metadata-lint'>
+    <properties/>
+    <testcase classname='task-metadata-lint' name='./' time='0'>
+      <skipped/>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite name='yaml-syntax' tests='4' errors='0' failures='0' skipped='0' time='0' timestamp='2021-02-12T01:28:58' hostname='ip-10-113-130-81.evoforge.org' id='2' package='yaml-syntax'>
+    <properties/>
+    <testcase classname='yaml-syntax' name='data/common.yaml' time='0'/>
+    <testcase classname='yaml-syntax' name='hiera.yaml' time='0'/>
+    <testcase classname='yaml-syntax' name='appveyor.yml' time='0'/>
+    <testcase classname='yaml-syntax' name='spec/default_facts.yml' time='0'/>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite name='metadata-syntax' tests='1' errors='0' failures='0' skipped='0' time='0' timestamp='2021-02-12T01:28:58' hostname='ip-10-113-130-81.evoforge.org' id='3' package='metadata-syntax'>
+    <properties/>
+    <testcase classname='metadata-syntax' name='metadata.json' time='0'/>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite name='rubocop' tests='2' errors='0' failures='0' skipped='0' time='0' timestamp='2021-02-12T01:28:58' hostname='ip-10-113-130-81.evoforge.org' id='4' package='rubocop'>
+    <properties/>
+    <testcase classname='rubocop' name='spec/classes/install_spec.rb' time='0'/>
+    <testcase classname='rubocop' name='spec/spec_helper.rb' time='0'/>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite name='puppet-syntax' tests='4' errors='0' failures='0' skipped='0' time='0' timestamp='2021-02-12T01:28:58' hostname='ip-10-113-130-81.evoforge.org' id='5' package='puppet-syntax'>
+    <properties/>
+    <testcase classname='puppet-syntax' name='manifests/init.pp' time='0'/>
+    <testcase classname='puppet-syntax' name='manifests/install.pp' time='0'/>
+    <testcase classname='puppet-syntax' name='manifests/params.pp' time='0'/>
+    <testcase classname='puppet-syntax' name='manifests/service.pp' time='0'/>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite name='metadata-json-lint' tests='1' errors='0' failures='0' skipped='0' time='0' timestamp='2021-02-12T01:28:58' hostname='ip-10-113-130-81.evoforge.org' id='6' package='metadata-json-lint'>
+    <properties/>
+    <testcase classname='metadata-json-lint' name='metadata.json' time='0'/>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite name='puppet-lint' tests='4' errors='0' failures='0' skipped='0' time='0' timestamp='2021-02-12T01:28:58' hostname='ip-10-113-130-81.evoforge.org' id='7' package='puppet-lint'>
+    <properties/>
+    <testcase classname='puppet-lint' name='manifests/init.pp' time='0'/>
+    <testcase classname='puppet-lint' name='manifests/install.pp' time='0'/>
+    <testcase classname='puppet-lint' name='manifests/params.pp' time='0'/>
+    <testcase classname='puppet-lint' name='manifests/service.pp' time='0'/>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+  <testsuite name='puppet-epp' tests='1' errors='0' failures='0' skipped='1' time='0' timestamp='2021-02-12T01:28:58' hostname='ip-10-113-130-81.evoforge.org' id='8' package='puppet-epp'>
+    <properties/>
+    <testcase classname='puppet-epp' name='./' time='0'>
+      <skipped/>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>
