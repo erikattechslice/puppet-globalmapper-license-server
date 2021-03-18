@@ -1,8 +1,8 @@
 {
-  "name": "penacity-globalmapper-license-server",
+  "name": "penacity-globalmapper_license_server",
   "version": "0.1.0",
   "author": "penacity",
-  "summary": "globalmapper-license-server license software",
+  "summary": "globalmapper_license_server license software",
   "license": "proprietary",
   "source": "",
   "dependencies": [

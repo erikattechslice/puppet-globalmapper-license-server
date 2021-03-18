@@ -1,5 +1,5 @@
-#Enable services for globalmapper-license-server licensing 
-class globalmapper-license-server::service inherits globalmapper-license-server {
+#Enable services for globalmapper_license_server licensing 
+class globalmapper_license_server::service inherits globalmapper_license_server {
 
 if $::osfamily =='windows' {
 
@@ -15,7 +15,7 @@ if $::osfamily =='windows' {
 
     service {'lmgrd':
       ensure  => 'running',
-      require => Package['globalmapper-license-server-license-manager'],
+      require => Package['globalmapper_license_server-license-manager'],
       enable  => true,
     }
   }

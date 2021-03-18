@@ -1,7 +1,7 @@
-# Class: globalmapper-license-server
+# Class: globalmapper_license_server
 # ===========================
 #
-# globalmapper-license-server is a module that installs the globalmapper-license-server library, and launches 
+# globalmapper_license_server is a module that installs the globalmapper_license_server library, and launches 
 # from the library using parameters passed to the node.
 #
 # Parameters
@@ -22,7 +22,7 @@
 # --------
 #
 # @example
-# class { "globalmapper-license-server":
+# class { "globalmapper_license_server":
 #   erd_ip       => '10.0.0.100',
 #   erd_username => 'admin',
 #   erd_password => 'password',
@@ -39,15 +39,15 @@
 #
 #
 
-class globalmapper-license-server (
+class globalmapper_license_server (
 
 
-) inherits globalmapper-license-server::params {
+){
 
-  class { '::globalmapper-license-server::install': }
-  -> class { '::globalmapper-license-server::service': }
+  class { '::globalmapper_license_server::install': }
+  -> class { '::globalmapper_license_server::service': }
 
-  contain '::globalmapper-license-server::install'
-  contain '::globalmapper-license-server::service'
+  contain '::globalmapper_license_server::install'
+  contain '::globalmapper_license_server::service'
 
 }
